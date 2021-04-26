@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,15 @@
 		83CB1B722636F318009429B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CB1B702636F318009429B2 /* Main.storyboard */; };
 		83CB1B742636F31A009429B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CB1B732636F31A009429B2 /* Assets.xcassets */; };
 		83CB1B772636F31A009429B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CB1B752636F31A009429B2 /* LaunchScreen.storyboard */; };
+		83CB1B8C2636FC9D009429B2 /* PhotoAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB1B8A2636FC9D009429B2 /* PhotoAuthorization.swift */; };
+		83CB1B8D2636FC9D009429B2 /* PhotoRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB1B8B2636FC9D009429B2 /* PhotoRequestManager.swift */; };
+		83CB1B952636FF9F009429B2 /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB1B942636FF9F009429B2 /* ImageResizer.swift */; };
+		C3AF04B2F92120A4F844447D /* Pods_Mathflat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 247424ECC5EEE70EDFDB40A3 /* Pods_Mathflat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		247424ECC5EEE70EDFDB40A3 /* Pods_Mathflat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mathflat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B610062FCF672996A1E2B64 /* Pods-Mathflat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mathflat.debug.xcconfig"; path = "Target Support Files/Pods-Mathflat/Pods-Mathflat.debug.xcconfig"; sourceTree = "<group>"; };
 		83CB1B672636F318009429B2 /* Mathflat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mathflat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CB1B6A2636F318009429B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83CB1B6C2636F318009429B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		83CB1B732636F31A009429B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83CB1B762636F31A009429B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83CB1B782636F31A009429B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83CB1B8A2636FC9D009429B2 /* PhotoAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAuthorization.swift; sourceTree = "<group>"; };
+		83CB1B8B2636FC9D009429B2 /* PhotoRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRequestManager.swift; sourceTree = "<group>"; };
+		83CB1B942636FF9F009429B2 /* ImageResizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
+		F2FC61E3CE33632FE1980F69 /* Pods-Mathflat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mathflat.release.xcconfig"; path = "Target Support Files/Pods-Mathflat/Pods-Mathflat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3AF04B2F92120A4F844447D /* Pods_Mathflat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				83CB1B692636F318009429B2 /* Mathflat */,
 				83CB1B682636F318009429B2 /* Products */,
+				8CC1B6591D8995FE949D3817 /* Pods */,
+				B44875CCABA6427EA77E0B16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +69,7 @@
 		83CB1B692636F318009429B2 /* Mathflat */ = {
 			isa = PBXGroup;
 			children = (
+				83CB1B932636FF6C009429B2 /* Common */,
 				83CB1B6A2636F318009429B2 /* AppDelegate.swift */,
 				83CB1B6C2636F318009429B2 /* SceneDelegate.swift */,
 				83CB1B6E2636F318009429B2 /* ViewController.swift */,
@@ -67,6 +81,33 @@
 			path = Mathflat;
 			sourceTree = "<group>";
 		};
+		83CB1B932636FF6C009429B2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				83CB1B8A2636FC9D009429B2 /* PhotoAuthorization.swift */,
+				83CB1B8B2636FC9D009429B2 /* PhotoRequestManager.swift */,
+				83CB1B942636FF9F009429B2 /* ImageResizer.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8CC1B6591D8995FE949D3817 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B610062FCF672996A1E2B64 /* Pods-Mathflat.debug.xcconfig */,
+				F2FC61E3CE33632FE1980F69 /* Pods-Mathflat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B44875CCABA6427EA77E0B16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				247424ECC5EEE70EDFDB40A3 /* Pods_Mathflat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83CB1B7B2636F31A009429B2 /* Build configuration list for PBXNativeTarget "Mathflat" */;
 			buildPhases = (
+				880D9549EBC68425CF0A5872 /* [CP] Check Pods Manifest.lock */,
 				83CB1B632636F318009429B2 /* Sources */,
 				83CB1B642636F318009429B2 /* Frameworks */,
 				83CB1B652636F318009429B2 /* Resources */,
+				0F61C9F2D5E1362C578C26C4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +175,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F61C9F2D5E1362C578C26C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mathflat/Pods-Mathflat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mathflat/Pods-Mathflat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mathflat/Pods-Mathflat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		880D9549EBC68425CF0A5872 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mathflat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83CB1B632636F318009429B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,7 +224,10 @@
 			files = (
 				83CB1B6F2636F318009429B2 /* ViewController.swift in Sources */,
 				83CB1B6B2636F318009429B2 /* AppDelegate.swift in Sources */,
+				83CB1B8C2636FC9D009429B2 /* PhotoAuthorization.swift in Sources */,
 				83CB1B6D2636F318009429B2 /* SceneDelegate.swift in Sources */,
+				83CB1B952636FF9F009429B2 /* ImageResizer.swift in Sources */,
+				83CB1B8D2636FC9D009429B2 /* PhotoRequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,17 +371,18 @@
 		};
 		83CB1B7C2636F31A009429B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B610062FCF672996A1E2B64 /* Pods-Mathflat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 77F6X5R2CN;
+				DEVELOPMENT_TEAM = 66WFXV977Y;
 				INFOPLIST_FILE = Mathflat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kiwan.Mathflat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiwan.Mathflat2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,17 +391,18 @@
 		};
 		83CB1B7D2636F31A009429B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2FC61E3CE33632FE1980F69 /* Pods-Mathflat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 77F6X5R2CN;
+				DEVELOPMENT_TEAM = 66WFXV977Y;
 				INFOPLIST_FILE = Mathflat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kiwan.Mathflat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiwan.Mathflat2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

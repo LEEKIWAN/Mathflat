@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8373758D263837AC00E05020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8373758C263837AC00E05020 /* Main.storyboard */; };
 		83CB1B6B2636F318009429B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB1B6A2636F318009429B2 /* AppDelegate.swift */; };
 		83CB1B6D2636F318009429B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB1B6C2636F318009429B2 /* SceneDelegate.swift */; };
 		83CB1B6F2636F318009429B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB1B6E2636F318009429B2 /* ViewController.swift */; };
-		83CB1B722636F318009429B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CB1B702636F318009429B2 /* Main.storyboard */; };
 		83CB1B742636F31A009429B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CB1B732636F31A009429B2 /* Assets.xcassets */; };
 		83CB1B772636F31A009429B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CB1B752636F31A009429B2 /* LaunchScreen.storyboard */; };
 		83CB1B8C2636FC9D009429B2 /* PhotoAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB1B8A2636FC9D009429B2 /* PhotoAuthorization.swift */; };
@@ -22,11 +22,11 @@
 /* Begin PBXFileReference section */
 		247424ECC5EEE70EDFDB40A3 /* Pods_Mathflat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mathflat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B610062FCF672996A1E2B64 /* Pods-Mathflat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mathflat.debug.xcconfig"; path = "Target Support Files/Pods-Mathflat/Pods-Mathflat.debug.xcconfig"; sourceTree = "<group>"; };
+		8373758C263837AC00E05020 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		83CB1B672636F318009429B2 /* Mathflat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mathflat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CB1B6A2636F318009429B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83CB1B6C2636F318009429B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		83CB1B6E2636F318009429B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		83CB1B712636F318009429B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83CB1B732636F31A009429B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83CB1B762636F31A009429B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83CB1B782636F31A009429B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,8 +73,8 @@
 				83CB1B6A2636F318009429B2 /* AppDelegate.swift */,
 				83CB1B6C2636F318009429B2 /* SceneDelegate.swift */,
 				83CB1B6E2636F318009429B2 /* ViewController.swift */,
-				83CB1B702636F318009429B2 /* Main.storyboard */,
 				83CB1B732636F31A009429B2 /* Assets.xcassets */,
+				8373758C263837AC00E05020 /* Main.storyboard */,
 				83CB1B752636F31A009429B2 /* LaunchScreen.storyboard */,
 				83CB1B782636F31A009429B2 /* Info.plist */,
 			);
@@ -167,9 +167,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8373758D263837AC00E05020 /* Main.storyboard in Resources */,
 				83CB1B772636F31A009429B2 /* LaunchScreen.storyboard in Resources */,
 				83CB1B742636F31A009429B2 /* Assets.xcassets in Resources */,
-				83CB1B722636F318009429B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,14 +234,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		83CB1B702636F318009429B2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83CB1B712636F318009429B2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		83CB1B752636F31A009429B2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
